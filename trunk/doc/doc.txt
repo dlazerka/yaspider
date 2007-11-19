@@ -1,0 +1,38 @@
+ToDo:
+	f VIEW: Clear button
+	f VIEW: log
+	f use SQLLite and SQLObject
+	f migrate to wxWidgets
+	! pages from cfg must be in pagesList before Start
+	f pages saving to cfg
+	f VIEW: pagesList's scrollbar
+	f step-by-step working (Stop -> Pause)
+	f bad characters in urls (and conflicted filenames)
+	f validating project settings
+	ñ clarify PageStatus
+
+
+
+Page statuses:
+	failed regexp
+	queued
+	fetching...
+	fetching failed
+	fetched
+	stored
+	parsed
+	
+	
+This project idea born while trying to download HTML online docs and manuals to the local machine.
+Purpose of the project and its workflow is:
+1. Take first page, download and save it to the local drive.
+2. Parse the page and find links to other pages.
+3. Download these pages, save them (preserving remote directory structure).
+4. Parse them and find the links to other pages.
+5. GoTo step 3.
+
+	
+Each project has the:
+First URL -- the first page to download and parse.
+Local Path -- head directory where to save downloaded pages
+RegExp -- 
