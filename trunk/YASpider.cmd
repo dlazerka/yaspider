@@ -1,1 +1,1 @@
-python src/main.py  %~dp0
+python src/main.py
