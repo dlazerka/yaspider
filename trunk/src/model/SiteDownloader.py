@@ -16,7 +16,7 @@ class SiteDownloader(object):
 		import os.path
 		import xml.dom.minidom as minidom
 
-		cfgFilePath = os.path.dirname(__file__) + '/../SiteDownloader.cfg.xml'
+		cfgFilePath = os.path.dirname(__file__) + '/../../YASpider.cfg.xml'
 
 		cfgNode = minidom.parse(cfgFilePath).getElementsByTagName('cfg')[0]
 		projectsNode = cfgNode.getElementsByTagName('projects')[0]

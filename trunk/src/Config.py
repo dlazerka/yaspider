@@ -3,5 +3,5 @@ class Config(object):
 		self.homedir = homedir
 		
 	def __str__(self):
-		return self.super.__str__()
+		return "%s: homedir=\"%s\"" % (self.__repr__(), self.homedir)
 			
